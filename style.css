@@ -52,18 +52,33 @@ nav li a{
     height: 150px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     color:rgb(240, 228, 228);
 
 }
-.banner .search input{
-    height:50px;
-    width:300px;
-    margin-left: 50px;
-    box-shadow: 5px 5px 12px rgb(252, 239, 239) ;
-    border-radius: 20px;
-    border:none;
+.banner i{
+    font-size: 1.5em;
 }
+
+.banner #search-text{
+    border-top:thin solid  #e5e5e5;
+    border-right:thin solid #e5e5e5;
+    border-bottom:0;
+    border-left:thin solid  #e5e5e5;
+    box-shadow:0px 1px 1px 1px #e5e5e5;
+    float:left;
+    height:35px;
+    margin:.8em 0 0 .5em; 
+    outline:0;
+    padding:.4em 0 .4em .6em; 
+    width:200px; 
+    border-radius: 20px;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat right ;
+    background-position: 170px;
+    background-color: white;
+    cursor: pointer;
+}
+
 .banner .logo{
     color:rgb(16, 246, 77);
     font-size:2rem;
@@ -178,3 +193,4 @@ button{
     color:white;
     border-radius: 20px;
 }
+
