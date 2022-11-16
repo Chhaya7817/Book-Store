@@ -168,6 +168,7 @@ nav li a{
     align-items: center;
     text-align: center;
     font-size: 1.3em;
+    
 }
 .bestsellers .books img{
     height:75%;
@@ -182,6 +183,23 @@ nav li a{
 }
 .bestsellers .books .writer span{
     opacity: 0.7;
+}
+.bestsellers .books .price{
+    background-color: rgb(82, 97, 82);
+    color: white;
+    border:2px solid black;
+    margin:0px 80px;
+
+
+}
+.bestsellers .books .price span{
+    background-color:green ;
+    color:black;
+    border:2px solid black;
+    text-align: right;
+    width:50%;
+
+
 }
 button{
     background-color: green;
