@@ -9,27 +9,28 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="container" id="homepage">
     <header>
         <nav>
-            <div class="logo">BOOK STORE</div>
+            <div class="logo"><a href="#homepage">BOOK STORE</a></div>
             <div class="nav-content">
                 <li>
-                    <a href="#Online-store">Online store</a>
+                    <a href="#homepage">Online store</a>
                 </li>
                 <li>
-                    <a href="AboutUs">About Us</a>
+                    <a href="#AboutUs">About Us</a>
                 </li>
                 <li>
-                    <a href="Contact">Contact</a>
+                    <a href="#Contact">Contact</a>
                 </li>
             </div>
             <div class="nav-links">
                 <li>
-                    <a href="#cart"><i class="fa-sharp fa-solid fa-cart-plus"></i>
+                    <a href="#cart"><i id="cart" class="fa-sharp fa-solid fa-cart-plus"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#sign-in">Sign In</a>
+                    <a href="#sign-in" id="login">Sign In</a>
                 </li>
             </div>
         </nav>
@@ -49,11 +50,11 @@
     </div>
 
     <div class="variations">
-        <li><a href="#textbooks">TextBooks</a></li>
-        <li><a href="#notebooks">Notebooks</a></li>
-        <li><a href="#audiobooks">AudioBooks</a></li>
-        <li><a href="#magazines">Magazines</a></li>
-        <li><a href="#movies">Movies</a></li>
+        <li><a href="#bestsellers">bestsellers</a></li>
+        <li><a href="#scifi">Scifi</a></li>
+        <li><a href="#engineering">Engineering</a></li>
+        <li><a href="#bussiness">Bussiness</a></li>
+        <li><a href="#comics">Comics</a></li>
     </div>
 
     <div class="carazol">
@@ -130,7 +131,7 @@
 
 </div>
 
-    <div class="bestsellers">
+    <div class="bestsellers" id="bestsellers">
         <section>
         <header><div class="title">bestsellers</div></header>
         <div class="books">
@@ -144,7 +145,7 @@
     </section>
     </div>
     
-    <div class="scifi">
+    <div class="scifi" id="scifi">
         <section>
             <header>
                 <div class="title">Sci-Fi & Fiction Books</div>
@@ -162,7 +163,7 @@
             <button onclick="window.location.href='productDetails.html'">View More</button>
         </section>
     </div>
-    <div class="comic">
+    <div class="comic" id="comic">
         <section>
             <header>
                 <div class="title">Comic & Story Books</div>
@@ -180,7 +181,7 @@
             <button>View More</button>
         </section>
     </div>
-    <div class="engineering">
+    <div class="engineering" id="engineering">
         <section>
             <header>
                 <div class="title">Engineering Books</div>
@@ -198,7 +199,7 @@
             <button>View More</button>
         </section>
     </div>
-    <div class="bussiness">
+    <div class="bussiness" id="bussiness">
         <section>
             <header>
                 <div class="title">Bussiness Minds</div>
@@ -222,8 +223,13 @@
         <div class="test1"></div>
         <div class="test2"></div>
     </div>
+
+</div>
     <script src="./carasoul.js"></script>
     <script src="./productDetails.js"></script>
     <script src="./script.js"></script>
+    <script src="./cart.js"></script>
+
+
 </body>
 </html>
