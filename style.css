@@ -21,7 +21,7 @@ html{
 body{
     width:100vw;
     height: 100vh;
-    background-color: rgb(230, 144, 144);
+    background-color: #515558;
     
 }
 .header1 nav{
@@ -29,6 +29,7 @@ body{
     color:red;
     height: 80px;
     font-size: 1.5rem;
+    top:0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -109,7 +110,7 @@ body{
     font-size: 1.5em;
 }
 
-.banner #search-text{
+ #search-text{
     border-top:thin solid  #e5e5e5;
     border-right:thin solid #e5e5e5;
     border-bottom:0;
@@ -138,10 +139,11 @@ body{
 }
 
 .variations{
-    
-    background-color: antiquewhite;
+    margin-top:80px;
+    background-color: rgba(11, 10, 9, 0.542);
     height:100px;
     width: 100%;
+    color:white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -150,31 +152,33 @@ body{
 .variations li{
     list-style-type: circle;
     font-size: 1.5rem;
+    
 
 }
 .variations li a{
-    color:black;
+    color:rgb(243, 232, 232);
     text-decoration: none;
     font-weight: bold;
 }
-/* 
+
 .carazol{
     height:40%;
     width:100%;
-    background-color:rgb(196, 129, 28)
-} */
+  
+
+} 
 
 .updates{
+  background-color: #515558;
     height:30%;
     width:100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: blanchedalmond;
 }
 
 .updates .sales{
-    width:30%;
+    width:20%;
     background-color: rgb(185, 158, 158);
     height:80%;
     border:3px black;
@@ -186,7 +190,7 @@ body{
 
 }
 .updates .latestProducts{
-    width:30%;
+    width:20%;
     background-color: rgb(185, 158, 158);
     height:80%;
     border:3px solid rgb(111, 94, 94);
@@ -195,7 +199,7 @@ body{
     box-shadow: 20px 20px 20px;
 }
 .updates .blogs{
-    width:30%;
+    width:20%;
     background-color: rgb(185, 158, 158);
     height:80%;
     border:3px black;
@@ -584,7 +588,43 @@ td:last-child{
 
 
 
-
+footer{
+  /* height: 50vh; */
+  background-color: rgb(36, 13, 13);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 70px 20px;
+  color:white;
+  font-size: 1.5rem;
+}
+.photo,.contact,.news{
+  width: 400px;
+  padding: 10px 20px;
+  font-size: 22px;
+}
+.photo h3{
+  color:white;
+}
+.photo i{
+  padding-left: 20px;
+}
+.photo h3,.contact h3,.news h3{
+  padding: 20px;
+}
+.photo p,.contact p,.news p{
+  padding: 10px;
+  opacity: .7;
+}
+.news input{
+  width: 300px;
+  height: 40px;
+  background-color:transparent;
+  border: 2px solid #29d9d5;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 20px 0px;
+}
 
 
 
