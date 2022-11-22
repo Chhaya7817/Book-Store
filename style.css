@@ -565,6 +565,7 @@ td:last-child{
   padding-left: 10px;
   width: 8em;
 
+
 }
 .slide-container .card-wrapper .price span{
   background-color:green ;
@@ -732,4 +733,3 @@ body{
   display: none;
 }
 }
-
