@@ -1,5 +1,10 @@
 *{margin:0;padding:0;box-sizing: border-box;}
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body{
     width:100%;
     height: 100vh;
@@ -15,6 +20,9 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position:fixed;
+    position: -webkit-sticky;
+    z-index: 10000;
 
 }
 nav .logo{
@@ -54,6 +62,7 @@ nav li a{
     align-items: center;
     justify-content: space-evenly;
     color:rgb(240, 228, 228);
+    padding-top: 50px;
 
 }
 .banner i{
@@ -82,6 +91,10 @@ nav li a{
 .banner .logo{
     color:rgb(16, 246, 77);
     font-size:2rem;
+}
+.logo a{
+    text-decoration: none;
+    color:red;
 }
 
 .variations{
@@ -150,6 +163,115 @@ nav li a{
     border-radius: 20px;
     box-shadow: 20px 20px 20px;
 }
+/*
+login form*/
+.login-form-container{
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    background:rgba(255,255,255,.9);
+    position:fixed;
+    top:0; right:-105%;
+    z-index: 10000;
+    height:100%;
+    width:40%;
+}
+
+.login-form-container.active{
+    right:0;
+}
+
+.login-form-container form{
+    background:#fff;
+    border:2px solid black;
+    width:40rem;
+    padding:2rem;
+    box-shadow: box-shadow;
+    border-radius: .5rem;
+    margin:2rem;
+}
+
+.login-form-container form h3{
+    font-size: 2.0rem;
+    text-transform: uppercase;
+    color:black;
+    text-align: center;
+}
+
+.login-form-container form span{
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.login-form-container form .box{
+    width: 100%;
+    margin:.7rem 0;
+    font-size: 1.2rem;
+    border:2px solid black;
+    border-radius: .5rem;
+    padding:1rem 1.2rem;
+    color:black;
+    text-transform: none;
+}
+
+.login-form-container form .checkbox{
+    display:flex;
+    align-items: center;
+    gap:.5rem;
+    padding:1rem 0;
+}
+
+.login-form-container form .checkbox label{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.login-form-container form .btn{
+    text-align: center;
+    width:50%;
+    margin:1.5rem 0;
+    margin-left: 110px;
+    background-color: #717171;
+}
+
+.login-form-container form p{
+    padding-top: .8rem;
+    font-size: 1.5rem;
+}
+
+.login-form-container form p a{
+    text-decoration: underline;
+}
+
+.login-form-container #close-login-btn{
+    position: absolute;
+    top:2.5rem; right:3.5rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.btn{
+    margin-top: 1rem;
+    display:inline-block;
+    padding:.9rem 3rem;
+    border-radius: .5rem;
+    color:#fff;
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.login-form-container form .btn:hover{
+    background:green;
+}
+#close-login-btn:hover{
+    color: red;
+}
+
+
 section{
     background-color: aliceblue;
     width:100%;
