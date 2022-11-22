@@ -21,13 +21,13 @@ html{
 body{
     width:100vw;
     height: 100vh;
-    background-color: #515558;
+    background-color: #a2d2ff;
     
 }
 .header1 nav{
-    background-color: rgb(6, 0, 0);
+    background-color:#1d3557;
     color:red;
-    height: 80px;
+    height: 70px;
     font-size: 1.5rem;
     top:0;
     width: 100%;
@@ -98,20 +98,6 @@ body{
 }
 
 
-.banner{
-    background-color: rgba(75, 92, 108, 0.5);
-    width:100%;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    color:rgb(240, 228, 228);
-    padding-top: 50px;
-
-}
-.banner i{
-    font-size: 1.5em;
-}
 
  #search-text{
     border-top:thin solid  #e5e5e5;
@@ -142,14 +128,15 @@ body{
 }
 
 .variations{
-    margin-top:80px;
+    margin-top:70px;
     background-color: rgba(11, 10, 9, 0.542);
-    height:100px;
+    height:70px;
     width: 100%;
     color:white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 5px;
     
 }
 .variations li{
@@ -172,7 +159,7 @@ body{
 } 
 
 .updates{
-  background-color: #515558;
+  background-color:#a2d2ff;
     height:30%;
     width:100%;
     display: flex;
@@ -406,13 +393,14 @@ button{
     max-width: 1000px;
     position: relative;
     margin: auto;
+    transition: 2s;
   }
   
   /* Hide the images by default */
   .mySlides {
     display: none;
   }
-  
+
   /* Next & previous buttons */
   .prev, .next {
     cursor: pointer;
@@ -427,6 +415,8 @@ button{
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    transition: color 0.3s ease;
+  
   }
   
   /* Position the "next button" to the right */
@@ -474,6 +464,7 @@ button{
   
   .active, .dot:hover {
     background-color: #717171;
+    scale: 1.2;
   }
   
   /* Fading animation */
@@ -664,8 +655,8 @@ header .title{
   max-width: 1120px;
   width: 100%;
   /* padding: 40px 0; */
-  height:550px;
-  margin-top: 20px;
+  /* height:550px; */
+  margin-top: 0px;
 }
 .slide-content{
   /* margin: 0 40px; */
@@ -687,12 +678,15 @@ header .title{
   border: none;
   font-size: 16px;
   color: #FFF;
-  padding: 8px 16px;
+  padding: 18px 36px;
   background-color: #040711;
   border-radius: 6px;
   margin: 14px;
   cursor: pointer;
   transition: all 0.3s ease;
+  height:25px;
+  width:35x;
+  
 }
 .button:hover{
   background: #06080d;
@@ -701,9 +695,19 @@ header .title{
 .swiper-navBtn{
   color: #040508;
   transition: color 0.3s ease;
+  
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  
 }
 .swiper-navBtn:hover{
-  color: #04060d;
+  color: #edf0fc;
+
+  background-color: #4e566f;
 }
 .swiper-navBtn::before,
 .swiper-navBtn::after{
@@ -711,6 +715,7 @@ header .title{
 }
 .swiper-button-next{
   right: 0;
+
 }
 .swiper-button-prev{
   left: 0;
