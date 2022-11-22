@@ -7,11 +7,10 @@
     <title>BOOK Store</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="container" id="homepage">
-    <header>
+    <header class="header1">
         <nav>
             <div class="logo"><a href="#homepage">BOOK STORE</a></div>
             <div class="nav-content">
@@ -35,6 +34,18 @@
                 </li>
             </div>
         </nav>
+    </header>
+
+    <!--------------------------->
+    <header class="header2">
+    
+            
+        <a href="#homepage" class="fas fa-home"></a>
+        <a href="#AboutUs" ><i class="fa-solid fa-id-card"></i></a>
+        <a href="#Contact"><i class="fa-solid fa-phone-flip"></i></a>
+        <a href="#cart" ><i class="fa-sharp fa-solid fa-cart-flatbed"></i></a>
+        <a href="#sign-in" ><i class="fa-solid fa-user"></i></a>
+         
     </header>
 
 
@@ -132,102 +143,170 @@
 
 </div>
 
-    <div class="bestsellers" id="bestsellers">
-        <section>
+
+        <div class="slide-container swiper" id="bestsellers">
         <header><div class="title">bestsellers</div></header>
-        <div class="books">
-            <div class="book1"><img src="./images/book1.jpg" alt=""><div class="name">Atomic Habits</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book2"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book3"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book4"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book5"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+        <div class="bestseller">
+        <div class="card-wrapper swiper-wrapper">
+            <div class="book swiper-slide "id="book1"><img src="./images/book1.jpg" alt=""><div class="name">Atomic Habits</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span  ><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide" id="book2"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide" id="book3"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide" id="book4"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide" id="book5"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide "id="book6"><img src="./images/book1.jpg" alt=""><div class="name">Atomic Habits</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide" id="book7"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide" id="book8"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide" id="book9"> <img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide" id="book10"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+    
+       </div>
+       </div>
+       <div class="swiper-button-next swiper-navBtn"></div>
+           <div class="swiper-button-prev swiper-navBtn"></div>
+           <div class="swiper-pagination"></div>
+       <button></button>
+       </div>
+
+       <div class="slide-container swiper" id="scifi">
+        <header><div class="title">Science Fiction Books</div></header>
+        <div class="buss" >
+            <div class="card-wrapper swiper-wrapper">
+            <div class="book swiper-slide "><img src="./images/book1.jpg" alt=""><div class="name">Atomic Habits</div><div class="writer"><span>by</span> bhdcbjkr</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide "><img src="./images/book1.jpg" alt=""><div class="name">Atomic Habits</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+        
         </div>
-        <button>View More</button>
-    </section>
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        <button></button>
+        </div>
+                
+                <div class="slide-container swiper" id="comics">
+                    <header><div class="title">Comic & Story Books</div></header>
+                    <div class="comics" >
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="book swiper-slide "><img src="./images/book1.jpg" alt=""><div class="name">Atomic Habits</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide "><img src="./images/book1.jpg" alt=""><div class="name">Atomic Habits</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+        
+                        <div class="book swiper-slide "><img src="./images/book1.jpg" alt=""><div class="name">Atomic Habits</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+                        <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+                        <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+                        <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+                        <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+                        <div class="book swiper-slide "><img src="./images/book1.jpg" alt=""><div class="name">Atomic Habits</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+                        <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+                        <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+                        <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+                        <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+                    
+                    </div>
+                    </div>
+                    <div class="swiper-button-next swiper-navBtn " ></div>
+                        <div class="swiper-button-prev swiper-navBtn"></div>
+                        <div class="swiper-pagination"></div>
+                    <button></button>
+                    </div>
+   
+        <div class="slide-container swiper" id="engineering">
+            <header><div class="title">Engineering Books</div></header>
+            <div class="engineering" id="engineering">
+                <div class="card-wrapper swiper-wrapper">
+                <div class="book swiper-slide "><img src="./images/book1.jpg" alt=""><div class="name">Atomic Habits</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+                <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+                <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+                <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+                <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+                <div class="book swiper-slide "><img src="./images/book1.jpg" alt=""><div class="name">Atomic Habits</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+                <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+                <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+                <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+                <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            
+            </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            <button></button>
+            </div>
     </div>
     
-    <div class="scifi" id="scifi">
-        <section>
-            <header>
-                <div class="title">Sci-Fi & Fiction Books</div>
-                
-            </header>
-
-            <div class="books">
-                <div class="book1"><img src="./images/book1.jpg" alt=""><div class="name" >Atomic Habits</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book2"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book3"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book4"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book5"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            
-            </div>
-            <button onclick="window.location.href='productDetails.html'">View More</button>
-        </section>
-    </div>
-    <div class="comic" id="comic">
-        <section>
-            <header>
-                <div class="title">Comic & Story Books</div>
-                
-            </header>
-
-            <div class="books">
-                <div class="book1"><img src="./images/book1.jpg" alt=""><div class="name">Atomic Habits</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book2"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book3"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book4"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book5"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            
-            </div>
-            <button>View More</button>
-        </section>
-    </div>
-    <div class="engineering" id="engineering">
-        <section>
-            <header>
-                <div class="title">Engineering Books</div>
-                
-            </header>
-
-            <div class="books">
-                <div class="book1"><img src="./images/book1.jpg" alt=""><div class="name">Atomic Habits</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book2"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book3"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book4"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book5"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            
-            </div>
-            <button>View More</button>
-        </section>
-    </div>
-    <div class="bussiness" id="bussiness">
-        <section>
-            <header>
-                <div class="title">Bussiness Minds</div>
-                
-            </header>
-
-            <div class="books">
-                <div class="book1"><img src="./images/book1.jpg" alt=""><div class="name">Atomic Habits</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book2"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book3"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book4"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book5"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            
-            </div>
-            <button>View More</button>
-        </section>
-    </div>
+    <div class="slide-container swiper" id="bussiness">
+        <header><div class="title">Bussiness Minds</div></header>
+        <div class="buss" >
+            <div class="card-wrapper swiper-wrapper">
+            <div class="book swiper-slide "><img src="./images/book1.jpg" alt=""><div class="name">Atomic Habits</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide "><img src="./images/book1.jpg" alt=""><div class="name">Atomic Habits</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+            <div class="book swiper-slide"><img src="./images/book1.jpg" alt=""><div class="name">Atomic</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
+        
+        </div>
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        <button></button>
+        </div>
 
 
+ 
+  <!-- cart item details -->
+    <div class="small-container cart-page " color="white ">
+    <table>
+     <tr>
+         <th>Product</th>
+         <th>Quantity</th>
+         <th>Subtotal</th>
+     </tr>
+     <tr>
+         <td>
+             <div class="cart-info">
+                 <img src="images/book1.jpg" alt="">
+                 <div>
+                     <p>Atomic Habits by James Clear</p>
+                     <small>Price: $50.00</small>
+                     <br>
+                     <a href="">Delete</a>
+                 </div>
+             </div>
+         </td>
+         <td><input type="number" value="1"></td>
+         <td>$50.00 </td>
+     </tr>
+    </table>
+  </div>
     <div class="customer-Testimonials">
         <div class="test1"></div>
         <div class="test2"></div>
     </div>
+
+</div>
     <script src="./carasoul.js"></script>
-    <script src="./productDetails.js"></script>
     <script src="./script.js"></script>
-    <script src="./cart.js"></script>
+    <!-- <script src="./js/cart.js"></script> -->
 
 
 </body>
