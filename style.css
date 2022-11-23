@@ -75,6 +75,9 @@ body{
     text-decoration: none;
     color:white;
 }
+.header1 nav li a:hover{
+  color:red;
+}
 .header2{
   display: none;
 }
@@ -561,11 +564,29 @@ footer{
   padding: 10px 20px;
   font-size: 22px;
 }
-.photo h3{
+.contact p a{
   color:white;
+}
+.contact p a:hover{
+  text-decoration: underline;
+}
+.photo h3{
+  color:rgb(219, 207, 207);
+}
+footer h3:hover{
+  color:black;
+  scale: 1.1;
 }
 .photo i{
   padding-left: 20px;
+  cursor: pointer;
+  padding-left: 20px;
+  cursor: pointer;
+  color:white;
+}
+.photo i:hover{
+  scale:1.1;
+  color:blue;
 }
 .photo h3,.contact h3,.news h3{
   padding: 20px;
