@@ -249,7 +249,7 @@ login form*/
     top:0; right:-105%;
     z-index: 10000;
     height:100%;
-    width:40%;
+    width:35%;
 }
 
 .login-form-container.active{
@@ -306,7 +306,7 @@ login form*/
 }
 
 .login-form-container form .btn{
-    width:35%;
+    width:45%;
     padding-top: 5px;
     text-align: center;
     margin-left: 110px;
@@ -348,89 +348,6 @@ login form*/
     color: red;
 }
 
-/*
-.slide-container{
-    height:30%;
-    width:90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-content: space-evenly;
-    align-items: center;
-    margin:2rem 0;
-    text-align: center;
-
-    
-}
-.title{
-    margin:2rem 0rem;
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-.card-wrapper{
-    display: flex;
-    width:100%;
-    background-color: black;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    font-size: 1.3em;    
-}
-.book{
-    margin:2rem 0;
-    position: relative;
-    overflow: hidden;
-    border:var(--border);
-    text-align: center;
-}
- 
-
-img{
-    height: 25rem;
-    width: fit-content;
-
-}
-.slide-container .books .name{
-    font-weight: bold;
-    margin-top: 20px;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-.slide-container .books .writer span{
-    opacity: 0.7;
-}
-.slide-container .books .price{
-    background-color: rgb(82, 97, 82);
-    color: white;
-    border:2px solid black;
-    margin:0px 80px;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10px;
-
-
-}
-.slide-container .card-wrapper .price span{
-    background-color:green ;
-    color:black;
-    border:2px solid black;
-    text-align: right;
-    width:50px;
-    text-align: center;
-
-
-}
-button{
-    background-color: green;
-    border:none;
-    height:50px;
-    width: 100px;
-    margin-top:50px;
-    font-weight: bold;
-    color:white;
-    border-radius: 20px;
-    cursor: pointer;
-}*/
 
 .slideshow-container {
     max-width: 1000px;
@@ -455,10 +372,10 @@ button{
     color: white;
     font-weight: bold;
     font-size: 18px;
-    transition: 0.6s ease;
+    transition: 1s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    transition: color 0.3s ease;
+    transition: color 1s ease;
   
   }
   
@@ -832,5 +749,19 @@ body{
 .login-form-container #close-login-btn{
   top:4.5rem; right:6.5rem;
 
+}
+.fade img{
+  height:200px;
+  width:100%;
+}
+}
+@media screen and (max-width: 4.5px) {
+.book.img{
+  width:100%;
+}
+.card-wrapper{
+  row-gap:inherit;
+  /* padding: 25px 0 0 0; */
+  
 }
 }
