@@ -178,6 +178,9 @@ body{
     text-decoration: none;
     font-weight: bold;
 }
+.variations li a:hover{
+  color:rgb(154, 81, 81);
+}
 
 .carazol{
     height:100vh;
@@ -199,7 +202,9 @@ body{
 hr{
   font-size: 10px;
 }
-
+.updates .content{
+  font-size: 1.2rem;
+}
 .updates .sales{
     width:20%;
     background-color: rgb(185, 158, 158);
@@ -209,11 +214,16 @@ hr{
     text-align: center;
     border-radius: 20px;
     box-shadow: 20px 20px 20px;
-    transition: 2s;
+    transition: 0.5s;
 }
 .updates .sales img{
 width:20%;
 height:20%;
+}
+
+#countdown{
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 .updates .latestProducts{
     width:20%;
@@ -223,7 +233,7 @@ height:20%;
     text-align: center;
     border-radius: 20px;
     box-shadow: 20px 20px 20px;
-    transition: 2s;
+    transition: 0.5s;
 }
 .updates .latestProducts img{
   width:40%;
@@ -246,11 +256,15 @@ height:20%;
     text-align: center;
     border-radius: 20px;
     box-shadow: 20px 20px 20px;
-    transition: 2s;
+    transition: 0.5s;
 }
 .updates .blogs img{
   width:40%;
   height:40%;
+  }
+  .updates h2{
+    margin-top: 10px;
+    padding-top: 0;
   }
 /*
 login form*/
@@ -733,6 +747,12 @@ header .title{
 .swiper-pagination-bullet-active{
   background-color: #07080b;
 }
+
+.fa-cart-plus:hover{
+  color: #29d9d5;
+}
+
+
 .header3{
   display: none;
   background-color:#1d3557;
@@ -758,9 +778,6 @@ header .title{
     height:80vh;
     width:100%;
   
-}
-hr{
-  font-size: 10px;
 }
 .updates{
   display: flex;
@@ -817,7 +834,7 @@ hr{
   font-size: 30px;
   padding-right: 10px;
 }
-.updates h2:hover{
+.aboutus .updates h2:hover{
   text-decoration: underline;
 }
 .updates .social a:hover{
