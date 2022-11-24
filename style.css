@@ -813,6 +813,10 @@ hr{
 .updates .person2:hover{
   scale:1.1;
 }
+.updates .social a{
+  font-size: 30px;
+  padding-right: 10px;
+}
 .updates h2:hover{
   text-decoration: underline;
 }
