@@ -1,0 +1,56 @@
+
+#contactUS{
+   display: flex;justify-content: center;
+   align-items: center;
+}
+ .contactUs{
+   margin: 100px 0;
+    width:500px;
+    background-color: rgb(137, 119, 119);
+    height:500px;
+    border-radius: 20px;
+    padding:10px;
+    /* margin-left: 600px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    flex-direction: column;
+ }
+ h2{
+    text-align: center;
+    padding:20px;
+    margin-top: 50px;
+
+ }
+ form{
+    margin:30px;
+ }
+ .contactUs input{
+    width:300px;
+    padding :5px;
+    border:2px solid rgb(137, 118, 118);
+ }
+ #checkout{
+   height:100px;
+ }
+ .btns{
+    display: flex;
+    justify-content: center;
+ }
+ .btn{
+    width:80px;
+    margin:20px;
+    padding:5px;
+    font-size :15px;
+    background-color:rgb(7, 108, 208);
+    border:none;
+    border-radius: 10px;
+ }
+ .btn:hover{
+   background-color: aqua;
+ }
+ a{
+   font-size: 20px;
+   font-weight: bold;
+ }

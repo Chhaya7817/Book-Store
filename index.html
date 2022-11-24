@@ -1,400 +1,862 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BOOK Store</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./contact us/style.css" />
+    <link rel="stylesheet" href="./theme.css">
+  </head>
+  <body>
     <div class="container" id="homepage">
-    <header class="header1">
+      <header class="header1">
         <nav>
-            <div class="logo"><a href="#homepage">BOOK STORE</a></div>
-            <!-- <div class="search">
+          <div class="logo"><a href="#homepage">BOOK STORE</a></div>
+          <!-- <div class="search">
                 <input type="text" placeholder="Search ..." id="search-text">
             </div> -->
-            <div class="nav-content">
-                <li>
-                    <a href="#homepage">Online store</a>
-                </li>
-                <li>
-                    <a href="#contact">About Us</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </div>
-            <div class="nav-links">
-                <li>
-                    <a href="#cartlist"><i id="cart1" class="fa-sharp fa-solid fa-cart-plus"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#sign-in" id="login">Sign In</a>
-                </li>
-            </div>
+          <div class="nav-content">
+            <li>
+              <a href="#homepage">Online store</a>
+            </li>
+            <li>
+              <a href="#events">Updates</a>
+            </li>
+            <li>
+              <a href="#contact">About Us</a>
+            </li>
+            <li>
+              <a href="#contactUS">Contact</a>
+            </li>
+          </div>
+          <div class="nav-links">
+            <li>
+              <a href="#cartlist"
+                ><i id="cart1" class="fa-sharp fa-solid fa-cart-plus"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#sign-in" id="login">Sign In</a>
+            </li>
+          </div>
         </nav>
-    </header>
+      </header>
 
-    <!--------------------------->
-    <header class="header2">
-    
-            
+      <!--------------------------->
+      <header class="header2">
         <a href="#homepage"><i class="fa-solid fas fa-home"></i></a>
         <a href="#menu" id="list"><i class="fa-solid fa-bars"></i></a>
         <a href="#contact"><i class="fa-solid fa-id-card"></i></a>
-        <a href="#cartlist" id="cart"><i class="fa-sharp fa-solid fa-cart-flatbed"></i></a>
-        <a href="#sign-in" id="login1" ><i class="fa-solid fa-user"></i></a>
-         
-    </header>
+        <a href="#cartlist" id="cart"
+          ><i class="fa-sharp fa-solid fa-cart-flatbed"></i
+        ></a>
+        <a href="#sign-in" id="login1"><i class="fa-solid fa-user"></i></a>
+      </header>
+      <header class="header3">
+        <nav>
+          <div class="logo"><a href="#homepage">BOOK STORE</a></div>
+        </nav>
+      </header>
 
-<div id="menu" class="menulist">
-        <li><a href="#bestsellers">bestsellers</a></li>
-        <li><a href="#scifi">Scifi</a></li>
-        <li><a href="#engineering">Engineering</a></li>
-        <li><a href="#bussiness">Bussiness</a></li>
-        <li><a href="#comics">Comics</a></li>
+<!--Theme-->
+<div class="theme">
+<form class="form-control">
+    <fieldset>
+
+      <label for="light"></label>
+      <input type="radio" name="theme" id="light" checked>
+
+      <label for="lightgreen"></label>
+      <input type="radio" name="theme" id="lightgreen">
+
+      <label for="orange"></label>
+      <input type="radio" name="theme" id="orange">
+
+      <label for="babyPink"></label>
+      <input type="radio" name="theme" id="babyPink">
+
+      <label for="dark"></label>
+      <input type="radio" name="theme" id="dark">
+
+    </fieldset>
+  </form>
 </div>
-
-
-    <div class="variations">
-        <li><a href="#bestsellers">bestsellers</a></li>
-        <li><a href="#scifi">Scifi</a></li>
-        <li><a href="#engineering">Engineering</a></li>
-        <li><a href="#bussiness">Bussiness</a></li>
-        <li><a href="#comics">Comics</a></li>
-    </div>
-
-    <div class="carazol">
+<!--theme-->
+      <div class="carazol">
+        <header><div class="title">Book Library</div></header>
         <div class="slideshow-container">
-
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="./images/slider-books1.png" style="width:100%">
-              <div class="text">Books</div>
-            </div>
-          
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="./images/Slider-Banner-webpage2.jpg" style="width:100%">
-              <div class="text">Motivates toward good</div>
-            </div>
-          
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="./images/slider-books2.png" style="width:100%">
-              <div class="text">Ted Kennedy</div>
-            </div>
-          
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="./images/slider-books1.png" style="width: 100%" />
+            <div class="text">Books</div>
           </div>
-          <br>
-          
-          <!-- The dots/circles -->
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img
+              src="./images/Slider-Banner-webpage2.jpg"
+              style="width: 100%"
+            />
+            <div class="text">Motivates toward good</div>
           </div>
-    </div>
 
-    <div class="updates">
-        <div class="blogs"><h2>SALE</h2>
-            
-            <img src="./images/pngwing.com (1).png" alt="">
-            </div>
-            <div class="latestProducts"><h2>LATEST PRODUCTS</h2><hr>
-                <div class="content">Look Into </div>
-                <img src="./images/pngwing.com (2).png" alt="">
-            </div>
-        <div class="sales"><h2>UPCOMING SALES</h2><hr> 
-            <img src="./images/pngwing.com.png" alt="">
-            <div class="content">New Year Sale </div>
-           </div>
-       
-       
-    </div>
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./images/slider-books2.png" style="width: 100%" />
+            <div class="text">Ted Kennedy</div>
+          </div>
 
-<!-- login form  -->
-
-<div class="login-form-container">
-
-    <div id="close-login-btn" class="fas fa-times"></div>
-
-    <form action="">
-        <h3>sign in</h3>
-        <span>username</span>
-        <input type="email" name="" class="box" placeholder="enter your email" id="">
-        <span>password</span>
-        <input type="password" name="" class="box" placeholder="enter your password" id="">
-        <div class="checkbox">
-            <input type="checkbox" name="" id="remember-me">
-            <label for="remember-me"> remember me</label>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <input type="submit" value="sign in" class="btn">
-        <p>forget password ? <a href="#">click here</a></p>
-        <p>don't have an account ? <a href="#">create one</a></p>
-    </form>
+        <br />
 
-</div>
+        <!-- The dots/circles -->
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
 
+      <div class="events" id="events">
+        <header><div class="title">Upcoming Events</div></header>
+        <br />
+        <div class="updates">
+          <div class="blogs">
+            <h2>SALE</h2>
 
-        <div class="slide-container swiper" id="bestsellers">
+            <img src="./images/pngwing.com (1).png" alt="" />
+          </div>
+          <div class="latestProducts">
+            <h2>LATEST PRODUCTS</h2>
+            <hr />
+            <div class="content">Look Into</div>
+            <img src="./images/pngwing.com (2).png" alt="" />
+          </div>
+          <div class="sales">
+            <h2>UPCOMING SALES</h2>
+            <hr />
+            <img src="./images/pngwing.com.png" alt="" />
+            <div class="content">New Year Sale</div>
+          </div>
+        </div>
+      </div>
+      <div id="menu" class="menulist">
+        <p>Menu</p>
+        <li><a href="#bestsellers">bestsellers</a></li>
+        <li><a href="#scifi">Scifi</a></li>
+        <li><a href="#engineering">Engineering</a></li>
+        <li><a href="#bussiness">Bussiness</a></li>
+        <li><a href="#comics">Comics</a></li>
+      </div>
+
+      <div class="variations">
+        <li><a href="#bestsellers">bestsellers</a></li>
+        <li><a href="#scifi">Scifi</a></li>
+        <li><a href="#engineering">Engineering</a></li>
+        <li><a href="#bussiness">Bussiness</a></li>
+        <li><a href="#comics">Comics</a></li>
+      </div>
+
+      <!-- login form  -->
+
+      <div class="login-form-container">
+        <div id="close-login-btn" class="fas fa-times"></div>
+
+        <form action="">
+          <h3>sign in</h3>
+          <span>username</span>
+          <input
+            type="email"
+            name=""
+            class="box"
+            placeholder="enter your email"
+            id=""
+          />
+          <span>password</span>
+          <input
+            type="password"
+            name=""
+            class="box"
+            placeholder="enter your password"
+            id=""
+          />
+          <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me" />
+            <label for="remember-me"> remember me</label>
+          </div>
+          <input type="submit" value="sign in" class="btn" />
+          <p>forget password ? <a href="#">click here</a></p>
+          <p>don't have an account ? <a href="#">create one</a></p>
+        </form>
+      </div>
+
+      <div class="slide-container swiper" id="bestsellers">
         <header><div class="title">bestsellers</div></header>
         <div class="bestseller">
-        <div class="card-wrapper swiper-wrapper">
-            <div class="book swiper-slide "id="book1"><img src="./Books Images/Artificial Intelligence.jpg" alt=""><div class="name">Artificial Intelligence</div><div class="writer"><span>by</span> Peter Norvig</div><div class="price"> &#8377; 400 <span  ><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide" id="book2"><img src="./Books Images/Core Python Programming.webp" alt=""><div class="name">Core Python Programming</div><div class="writer"><span>by</span>Dr. R.Nageswara Rao</div><div class="price"> &#8377; 450 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide" id="book3"><img src="./Books Images/Engineering Mahhs (H.K.Daas).jpg" alt=""><div class="name">Engineering Mathematics</div><div class="writer"><span>by</span> H.K.Daas</div><div class="price"> &#8377; 600 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide" id="book4"><img src="./Books Images/DSA.jpg" alt=""><div class="name">Data Structure and Algorithm</div><div class="writer"><span>by</span>Narasimha</div><div class="price"> &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide" id="book5"><img src="./Books Images/chetan bhagat.jpg" alt=""><div class="name">The girl in room 105</div><div class="writer"><span>by</span> Chetan Bhagat</div><div class="price"> &#8377; 300 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide "id="book6"><img src="./Books Images/rules of grammer.jpeg" alt=""><div class="name">Rules Of Grammer</div><div class="writer"><span>by</span>Nimisha Bansal </div><div class="price"> &#8377; 380 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide" id="book7"><img src="./Books Images/let us C.jpg" alt=""><div class="name">Let Us C</div><div class="writer"><span>by</span> Yashavant Kanetkar</div><div class="price"> &#8377; 550 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide" id="book8"><img src="./Books Images/reasoning aptitude.jpg" alt=""><div class="name">Reasoning Aptitude</div><div class="writer"><span>by</span> Malvica Singh</div><div class="price"> &#8377; 400 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide" id="book9"> <img src="./Books Images/The Sherlock.jpg" alt=""><div class="name">The Sherlock Homes</div><div class="writer"><span>by</span> Sir Arthur Conan Doyle</div><div class="price"> &#8377; 250 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide" id="book10"><img src="./Books Images/question bank geography.webp" alt=""><div class="name">Question Bank (Geo)</div><div class="writer"><span>by</span> Vinay Kumar G.B.</div><div class="price"> &#8377; 560 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-    
-       </div>
-       </div>
-       <div class="swiper-button-next swiper-navBtn"></div>
-           <div class="swiper-button-prev swiper-navBtn"></div>
-           <div class="swiper-pagination"></div>
-       <button></button>
-       </div>
+          <div class="card-wrapper swiper-wrapper">
+            <div class="book swiper-slide" id="book1">
+              <img src="./Books Images/Artificial Intelligence.jpg" alt="" />
+              <div class="name">Artificial Intelligence</div>
+              <div class="writer"><span>by</span> Peter Norvig</div>
+              <div class="price">
+                &#8377; 400 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide" id="book2">
+              <img src="./Books Images/Core Python Programming.webp" alt="" />
+              <div class="name">Core Python Programming</div>
+              <div class="writer"><span>by</span>Dr. R.Nageswara Rao</div>
+              <div class="price">
+                &#8377; 450 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide" id="book3">
+              <img
+                src="./Books Images/Engineering Mahhs (H.K.Daas).jpg"
+                alt=""
+              />
+              <div class="name">Engineering Mathematics</div>
+              <div class="writer"><span>by</span> H.K.Daas</div>
+              <div class="price">
+                &#8377; 600 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide" id="book4">
+              <img src="./Books Images/DSA.jpg" alt="" />
+              <div class="name">Data Structure and Algorithm</div>
+              <div class="writer"><span>by</span>Narasimha</div>
+              <div class="price">
+                &#8377; 784 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide" id="book5">
+              <img src="./Books Images/chetan bhagat.jpg" alt="" />
+              <div class="name">The girl in room 105</div>
+              <div class="writer"><span>by</span> Chetan Bhagat</div>
+              <div class="price">
+                &#8377; 300 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide" id="book6">
+              <img src="./Books Images/rules of grammer.jpeg" alt="" />
+              <div class="name">Rules Of Grammer</div>
+              <div class="writer"><span>by</span>Nimisha Bansal</div>
+              <div class="price">
+                &#8377; 380 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide" id="book7">
+              <img src="./Books Images/let us C.jpg" alt="" />
+              <div class="name">Let Us C</div>
+              <div class="writer"><span>by</span> Yashavant Kanetkar</div>
+              <div class="price">
+                &#8377; 550 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide" id="book8">
+              <img src="./Books Images/reasoning aptitude.jpg" alt="" />
+              <div class="name">Reasoning Aptitude</div>
+              <div class="writer"><span>by</span> Malvica Singh</div>
+              <div class="price">
+                &#8377; 400 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide" id="book9">
+              <img src="./Books Images/The Sherlock.jpg" alt="" />
+              <div class="name">The Sherlock Homes</div>
+              <div class="writer"><span>by</span> Sir Arthur Conan Doyle</div>
+              <div class="price">
+                &#8377; 250 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide" id="book10">
+              <img src="./Books Images/question bank geography.webp" alt="" />
+              <div class="name">Question Bank (Geo)</div>
+              <div class="writer"><span>by</span> Vinay Kumar G.B.</div>
+              <div class="price">
+                &#8377; 560 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+        <button></button>
+      </div>
 
-       <div class="slide-container swiper" id="scifi">
+      <div class="slide-container swiper" id="scifi">
         <header><div class="title">Science Fiction Books</div></header>
-        <div class="scifi" >
-            <div class="card-wrapper swiper-wrapper">
-            <div class="book swiper-slide "><img src="./Books Images/Sci-Fic1.jpg" alt=""><div class="name">A Wrinke In Time</div><div class="writer"><span>by</span> Madeleine L'engle </div><div class="price"> &#8377; 500 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide"><img src="./Books Images/Sci-Fic2.jpg" alt=""><div class="name">Stephen King The Stand</div><div class="writer"><span>by</span> Los Angeles </div><div class="price"> &#8377; 300 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide"><img src="./Books Images/Sci-Fic3.jpeg" alt=""><div class="name">Eleven Graves</div><div class="writer"><span>by</span> Aman Gupta</div><div class="price"> &#8377; 399 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide"><img src="./Books Images/Sci-Fic4.jpeg" alt=""><div class="name">The Reboot</div><div class="writer"><span>by</span> Anand Arora</div><div class="price"> &#8377; 450 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide"><img src="./Books Images/Sci-Fic5.jpeg" alt=""><div class="name">Fall To Earth</div><div class="writer"><span>by</span> Ken Britz</div><div class="price"> &#8377; 520 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide "><img src="./Books Images/Sci-Fic6.jpeg" alt=""><div class="name">Intrepids</div><div class="writer"><span>by</span> Diana Huang</div><div class="price"> &#8377; 1,993 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide"><img src="./Books Images/Sci-Fic7.jpeg" alt=""><div class="name">Science and Magic</div><div class="writer"><span>by</span> Aditya Upadhaya</div><div class="price"> &#8377; 149 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide"><img src="./Books Images/Sc.jpg" alt=""><div class="name">Black Holes</div><div class="writer"><span>by</span>Stephen Hawking </div><div class="price"> &#8377; 600 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide"><img src="./Books Images/Sci-Fic9.jpg" alt=""><div class="name">Three Man in a Boat</div><div class="writer"><span>by</span> Jerome K Jerome</div><div class="price"> &#8377; 99 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide"><img src="./Books Images/Dracula.webp" alt=""><div class="name">Dracula</div><div class="writer"><span>by</span> Bram Stoker </div><div class="price"> &#8377; 420 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-        
-        </div>
+        <div class="scifi">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="book swiper-slide">
+              <img src="./Books Images/Sci-Fic1.jpg" alt="" />
+              <div class="name">A Wrinke In Time</div>
+              <div class="writer"><span>by</span> Madeleine L'engle</div>
+              <div class="price">
+                &#8377; 500 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/Sci-Fic2.jpg" alt="" />
+              <div class="name">Stephen King The Stand</div>
+              <div class="writer"><span>by</span> Los Angeles</div>
+              <div class="price">
+                &#8377; 300 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/Sci-Fic3.jpeg" alt="" />
+              <div class="name">Eleven Graves</div>
+              <div class="writer"><span>by</span> Aman Gupta</div>
+              <div class="price">
+                &#8377; 399 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/Sci-Fic4.jpeg" alt="" />
+              <div class="name">The Reboot</div>
+              <div class="writer"><span>by</span> Anand Arora</div>
+              <div class="price">
+                &#8377; 450 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/Sci-Fic5.jpeg" alt="" />
+              <div class="name">Fall To Earth</div>
+              <div class="writer"><span>by</span> Ken Britz</div>
+              <div class="price">
+                &#8377; 520 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/Sci-Fic6.jpeg" alt="" />
+              <div class="name">Intrepids</div>
+              <div class="writer"><span>by</span> Diana Huang</div>
+              <div class="price">
+                &#8377; 1,993 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/Sci-Fic7.jpeg" alt="" />
+              <div class="name">Science and Magic</div>
+              <div class="writer"><span>by</span> Aditya Upadhaya</div>
+              <div class="price">
+                &#8377; 149 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/Sc.jpg" alt="" />
+              <div class="name">Black Holes</div>
+              <div class="writer"><span>by</span>Stephen Hawking</div>
+              <div class="price">
+                &#8377; 600 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/Sci-Fic9.jpg" alt="" />
+              <div class="name">Three Man in a Boat</div>
+              <div class="writer"><span>by</span> Jerome K Jerome</div>
+              <div class="price">
+                &#8377; 99 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/Dracula.webp" alt="" />
+              <div class="name">Dracula</div>
+              <div class="writer"><span>by</span> Bram Stoker</div>
+              <div class="price">
+                &#8377; 420 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="swiper-button-next swiper-navBtn"></div>
-            <div class="swiper-button-prev swiper-navBtn"></div>
-            <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
         <button></button>
+      </div>
+
+      <div class="slide-container swiper" id="comics">
+        <header><div class="title">Comic & Story Books</div></header>
+        <div class="comics">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="book swiper-slide">
+              <img src="./Books Images/honeysuckle.jpg" alt="" />
+              <div class="name">HoneySuckle</div>
+              <div class="writer"><span>by</span> James Clear</div>
+              <div class="price">
+                &#8377; 325 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/Comic1.jpg" alt="" />
+              <div class="name">Tinkle Digest</div>
+              <div class="writer"><span>by</span> Anant Rai</div>
+              <div class="price">
+                &#8377; 200 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/comic2.jpg" alt="" />
+              <div class="name">Ponniyin Selvin Comics</div>
+              <div class="writer"><span>by</span> Kalki Krishnamurthy</div>
+              <div class="price">
+                &#8377; 499 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/comic3.jpg" alt="" />
+              <div class="name">Explores on the Moon</div>
+              <div class="writer"><span>by</span> Herge</div>
+              <div class="price">
+                &#8377; 435 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/comic4.jpg" alt="" />
+              <div class="name">The Jungle Book</div>
+              <div class="writer"><span>by</span> Wonder House Books</div>
+              <div class="price">
+                &#8377; 169 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/comic5.jpg" alt="" />
+              <div class="name">Great Stories for Kids</div>
+              <div class="writer"><span>by</span> Ruskin Bond</div>
+              <div class="price">
+                &#8377; 284 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/comic6.webp" alt="" />
+              <div class="name">Spiderman</div>
+              <div class="writer"><span>by</span> Donny Cates</div>
+              <div class="price">
+                &#8377; 99 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+
+            <div class="book swiper-slide">
+              <img src="./Books Images/The Sherlock.jpg" alt="" />
+              <div class="name">Sherlock</div>
+              <div class="writer"><span>by</span>Sir Arthur Conan Doyle</div>
+              <div class="price">
+                &#8377; 250 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/story1.jpg" alt="" />
+              <div class="name">inspirational Stories Of the Greats</div>
+              <div class="writer"><span>by</span> Ranjith Kumar</div>
+              <div class="price">
+                &#8377; 299 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/story2.jpg" alt="" />
+              <div class="name">Horror Stories</div>
+              <div class="writer"><span>by</span> Bryce Nealham</div>
+              <div class="price">
+                &#8377; 150 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/Story3.jpg" alt="" />
+              <div class="name">The Wind In the Willows</div>
+              <div class="writer"><span>by</span> Kenneth Grahame</div>
+              <div class="price">
+                &#8377; 169 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/story4..jpg" alt="" />
+              <div class="name">The Tale of Two Cities</div>
+              <div class="writer"><span>by</span> Charles Dickens</div>
+              <div class="price">
+                &#8377; 199 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/story5.jpg" alt="" />
+              <div class="name">The Canterville Ghost</div>
+              <div class="writer"><span>by</span> Oscar Wilde</div>
+              <div class="price">
+                &#8377; 89 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/story6.jpg" alt="" />
+              <div class="name">The Diary of a Young girl</div>
+              <div class="writer"><span>by</span> Anne Frank</div>
+              <div class="price">
+                &#8377; 200 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+          </div>
         </div>
-                
-                <div class="slide-container swiper" id="comics">
-                    <header><div class="title">Comic & Story Books</div></header>
-                    <div class="comics" >
-                    <div class="card-wrapper swiper-wrapper">
-            <div class="book swiper-slide "><img src="./Books Images/honeysuckle.jpg" alt=""><div class="name">HoneySuckle</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 325 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide"><img src="./Books Images/Comic1.jpg" alt=""><div class="name">Tinkle Digest</div><div class="writer"><span>by</span> Anant Rai</div><div class="price"> &#8377; 200 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide"><img src="./Books Images/comic2.jpg" alt=""><div class="name">Ponniyin Selvin Comics</div><div class="writer"><span>by</span> Kalki Krishnamurthy</div><div class="price"> &#8377; 499 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide"><img src="./Books Images/comic3.jpg" alt=""><div class="name">Explores on the Moon</div><div class="writer"><span>by</span> Herge</div><div class="price"> &#8377; 435 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide"><img src="./Books Images/comic4.jpg" alt=""><div class="name">The Jungle Book</div><div class="writer"><span>by</span> Wonder House Books</div><div class="price"> &#8377; 169 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide "><img src="./Books Images/comic5.jpg" alt=""><div class="name">Great Stories for Kids</div><div class="writer"><span>by</span> Ruskin Bond</div><div class="price"> &#8377; 284 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide"><img src="./Books Images/comic6.webp" alt=""><div class="name">Spiderman</div><div class="writer"><span>by</span> Donny Cates</div><div class="price"> &#8377; 99 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-        
-                        <div class="book swiper-slide "><img src="./Books Images/The Sherlock.jpg" alt=""><div class="name">Sherlock</div><div class="writer"><span>by</span>Sir Arthur Conan Doyle </div><div class="price"> &#8377; 250 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-                        <div class="book swiper-slide"><img src="./Books Images/story1.jpg" alt=""><div class="name">inspirational Stories Of the Greats</div><div class="writer"><span>by</span> Ranjith Kumar</div><div class="price"> &#8377; 299 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-                        <div class="book swiper-slide"><img src="./Books Images/story2.jpg" alt=""><div class="name">Horror Stories</div><div class="writer"><span>by</span> Bryce Nealham</div><div class="price"> &#8377; 150 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-                        <div class="book swiper-slide"><img src="./Books Images/Story3.jpg" alt=""><div class="name">The Wind In the Willows</div><div class="writer"><span>by</span> Kenneth Grahame</div><div class="price"> &#8377; 169 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-                        <div class="book swiper-slide"><img src="./Books Images/story4..jpg" alt=""><div class="name">The Tale of Two Cities</div><div class="writer"><span>by</span> Charles Dickens</div><div class="price"> &#8377; 199 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-                        <div class="book swiper-slide "><img src="./Books Images/story5.jpg" alt=""><div class="name">The Canterville Ghost</div><div class="writer"><span>by</span> Oscar Wilde</div><div class="price"> &#8377; 89 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-                        <div class="book swiper-slide"><img src="./Books Images/story6.jpg" alt=""><div class="name">The Diary of a Young girl</div><div class="writer"><span>by</span> Anne Frank</div><div class="price"> &#8377; 200 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-                    
-                    </div>
-                    </div>
-                    <div class="swiper-button-next swiper-navBtn " ></div>
-                        <div class="swiper-button-prev swiper-navBtn"></div>
-                        <div class="swiper-pagination"></div>
-                    <button></button>
-                    </div>
-   
-        <div class="slide-container swiper" id="engineering">
-            <header><div class="title">Engineering Books</div></header>
-            <div class="engineering" id="engineering">
-                <div class="card-wrapper swiper-wrapper">
-                <div class="book swiper-slide "><img src="./Books Images/Engineering Mahhs (H.K.Daas).jpg" alt=""><div class="name">Engineering Mathematics</div><div class="writer"><span>by</span> H.K.Daas</div><div class="price"> &#8377; 780 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-                <div class="book swiper-slide"><img src="./Books Images/engineering drawing.jpg" alt=""><div class="name">Engineering Drawing</div><div class="writer"><span>by</span> James Clear</div><div class="price"> &#8377; 300 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-                <div class="book swiper-slide"><img src="./Books Images/english for engineer.jpg" alt=""><div class="name">English for Engineers</div><div class="writer"><span>by</span> N.P.Sudharshana</div><div class="price"> &#8377; 420 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-                <div class="book swiper-slide"><img src="./Books Images/electrical enginnering.webp" alt=""><div class="name">Electrical Engineering</div><div class="writer"><span>by</span> Sachin Verma</div><div class="price"> &#8377; 700 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-                <div class="book swiper-slide"><img src="./Books Images/civil engineering.jpg" alt=""><div class="name">Civil Engineering</div><div class="writer"><span>by</span> GKP</div><div class="price"> &#8377; 400 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-                <div class="book swiper-slide "><img src="./Books Images/Engineering Maths (Balaji).jpg" alt=""><div class="name">Engineering Maths</div><div class="writer"><span>by</span> Dr.G.Balaji</div><div class="price"> &#8377; 500 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-                <div class="book swiper-slide"><img src="./Books Images/Basic Computer Engineering.jpg" alt=""><div class="name">Basic Computer Engineering</div><div class="writer"><span>by</span> Sanjay Silakari</div><div class="price"> &#8377; 600 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-                <div class="book swiper-slide"><img src="./Books Images/let us c++.jpg" alt=""><div class="name">Let Us C++</div><div class="writer"><span>by</span>Yashavant Kanetkar </div><div class="price"> &#8377; 550 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-                <div class="book swiper-slide"><img src="./Books Images/let us C.jpg" alt=""><div class="name">Let Us C</div><div class="writer"><span>by</span> Yashavant Kanetkar</div><div class="price"> &#8377; 550 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-                <div class="book swiper-slide"><img src="./Books Images/Engineering Maths (J.P.Mishra).jpg" alt=""><div class="name">Engineering Mathematics</div><div class="writer"><span>by</span> J.P.Mishra</div><div class="price"> &#8377; 450 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+        <button></button>
+      </div>
+
+      <div class="slide-container swiper" id="engineering">
+        <header><div class="title">Engineering Books</div></header>
+        <div class="engineering" id="engineering">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="book swiper-slide">
+              <img
+                src="./Books Images/Engineering Mahhs (H.K.Daas).jpg"
+                alt=""
+              />
+              <div class="name">Engineering Mathematics</div>
+              <div class="writer"><span>by</span> H.K.Daas</div>
+              <div class="price">
+                &#8377; 780 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
             </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/engineering drawing.jpg" alt="" />
+              <div class="name">Engineering Drawing</div>
+              <div class="writer"><span>by</span> James Clear</div>
+              <div class="price">
+                &#8377; 300 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
             </div>
-            <div class="swiper-button-next swiper-navBtn"></div>
-                <div class="swiper-button-prev swiper-navBtn"></div>
-                <div class="swiper-pagination"></div>
-            <button></button>
+            <div class="book swiper-slide">
+              <img src="./Books Images/english for engineer.jpg" alt="" />
+              <div class="name">English for Engineers</div>
+              <div class="writer"><span>by</span> N.P.Sudharshana</div>
+              <div class="price">
+                &#8377; 420 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
             </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/electrical enginnering.webp" alt="" />
+              <div class="name">Electrical Engineering</div>
+              <div class="writer"><span>by</span> Sachin Verma</div>
+              <div class="price">
+                &#8377; 700 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/civil engineering.jpg" alt="" />
+              <div class="name">Civil Engineering</div>
+              <div class="writer"><span>by</span> GKP</div>
+              <div class="price">
+                &#8377; 400 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/Engineering Maths (Balaji).jpg" alt="" />
+              <div class="name">Engineering Maths</div>
+              <div class="writer"><span>by</span> Dr.G.Balaji</div>
+              <div class="price">
+                &#8377; 500 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/Basic Computer Engineering.jpg" alt="" />
+              <div class="name">Basic Computer Engineering</div>
+              <div class="writer"><span>by</span> Sanjay Silakari</div>
+              <div class="price">
+                &#8377; 600 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/let us c++.jpg" alt="" />
+              <div class="name">Let Us C++</div>
+              <div class="writer"><span>by</span>Yashavant Kanetkar</div>
+              <div class="price">
+                &#8377; 550 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img src="./Books Images/let us C.jpg" alt="" />
+              <div class="name">Let Us C</div>
+              <div class="writer"><span>by</span> Yashavant Kanetkar</div>
+              <div class="price">
+                &#8377; 550 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+            <div class="book swiper-slide">
+              <img
+                src="./Books Images/Engineering Maths (J.P.Mishra).jpg"
+                alt=""
+              />
+              <div class="name">Engineering Mathematics</div>
+              <div class="writer"><span>by</span> J.P.Mishra</div>
+              <div class="price">
+                &#8377; 450 <span><i class="fa-solid fa-cart-plus"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+        <button></button>
+      </div>
     </div>
-    
+
     <div class="slide-container swiper" id="bussiness">
-        <header><div class="title">Bussiness Minds</div></header>
-        <div class="buss" >
-            <div class="card-wrapper swiper-wrapper">
-            <div class="book swiper-slide "><img src="./Books Images/BS1.jpg" alt=""><div class="name">Decoding Business Minds</div><div class="writer"><span>by</span> Ajay Gupta</div><div class="price"> &#8377; 190 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide"><img src="./Books Images/BS2.jpg" alt=""><div class="name">Life's Amazing Secrets</div><div class="writer"><span>by</span> Gaur Gopal Das</div><div class="price"> &#8377; 160 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide"><img src="./Books Images/Bs3.jfif" alt=""><div class="name">Think And Grow Rich</div><div class="writer"><span>by</span> Napoleon Hill</div><div class="price"> &#8377; 300 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide"><img src="./Books Images/Bs4.jpg" alt=""><div class="name">Mind Your Business</div><div class="writer"><span>by</span> Ilana Griffo</div><div class="price"> &#8377; 250 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide"><img src="./Books Images/Bs5.jpg" alt=""><div class="name">The Entrepreneur Mind</div><div class="writer"><span>by</span> Kevin D. Johnson</div><div class="price"> &#8377; 400 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide "><img src="./Books Images/Bs6.jfif" alt=""><div class="name">Zero To One</div><div class="writer"><span>by</span> Peter Thiel</div><div class="price"> &#8377; 320 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide"><img src="./Books Images/Bs7.jpeg" alt=""><div class="name">The Power of Positive Thinking</div><div class="writer"><span>by</span> Norman Vincent Peale</div><div class="price"> &#8377; 153 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-            <div class="book swiper-slide"><img src="./Books Images/english in action.jpg" alt=""><div class="name">English In Action</div><div class="writer"><span>by</span> K durga Bhavani</div><div class="price"> &#8377; 499 <span><i class="fa-solid fa-cart-plus"></i></span></div></div>
-        
+      <header><div class="title">Bussiness Minds</div></header>
+      <div class="buss">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="book swiper-slide">
+            <img src="./Books Images/BS1.jpg" alt="" />
+            <div class="name">Decoding Business Minds</div>
+            <div class="writer"><span>by</span> Ajay Gupta</div>
+            <div class="price">
+              &#8377; 190 <span><i class="fa-solid fa-cart-plus"></i></span>
+            </div>
+          </div>
+          <div class="book swiper-slide">
+            <img src="./Books Images/BS2.jpg" alt="" />
+            <div class="name">Life's Amazing Secrets</div>
+            <div class="writer"><span>by</span> Gaur Gopal Das</div>
+            <div class="price">
+              &#8377; 160 <span><i class="fa-solid fa-cart-plus"></i></span>
+            </div>
+          </div>
+          <div class="book swiper-slide">
+            <img src="./Books Images/Bs3.jfif" alt="" />
+            <div class="name">Think And Grow Rich</div>
+            <div class="writer"><span>by</span> Napoleon Hill</div>
+            <div class="price">
+              &#8377; 300 <span><i class="fa-solid fa-cart-plus"></i></span>
+            </div>
+          </div>
+          <div class="book swiper-slide">
+            <img src="./Books Images/Bs4.jpg" alt="" />
+            <div class="name">Mind Your Business</div>
+            <div class="writer"><span>by</span> Ilana Griffo</div>
+            <div class="price">
+              &#8377; 250 <span><i class="fa-solid fa-cart-plus"></i></span>
+            </div>
+          </div>
+          <div class="book swiper-slide">
+            <img src="./Books Images/Bs5.jpg" alt="" />
+            <div class="name">The Entrepreneur Mind</div>
+            <div class="writer"><span>by</span> Kevin D. Johnson</div>
+            <div class="price">
+              &#8377; 400 <span><i class="fa-solid fa-cart-plus"></i></span>
+            </div>
+          </div>
+          <div class="book swiper-slide">
+            <img src="./Books Images/Bs6.jfif" alt="" />
+            <div class="name">Zero To One</div>
+            <div class="writer"><span>by</span> Peter Thiel</div>
+            <div class="price">
+              &#8377; 320 <span><i class="fa-solid fa-cart-plus"></i></span>
+            </div>
+          </div>
+          <div class="book swiper-slide">
+            <img src="./Books Images/Bs7.jpeg" alt="" />
+            <div class="name">The Power of Positive Thinking</div>
+            <div class="writer"><span>by</span> Norman Vincent Peale</div>
+            <div class="price">
+              &#8377; 153 <span><i class="fa-solid fa-cart-plus"></i></span>
+            </div>
+          </div>
+          <div class="book swiper-slide">
+            <img src="./Books Images/english in action.jpg" alt="" />
+            <div class="name">English In Action</div>
+            <div class="writer"><span>by</span> K durga Bhavani</div>
+            <div class="price">
+              &#8377; 499 <span><i class="fa-solid fa-cart-plus"></i></span>
+            </div>
+          </div>
         </div>
-        </div>
-        <div class="swiper-button-next swiper-navBtn"></div>
-            <div class="swiper-button-prev swiper-navBtn"></div>
-            <div class="swiper-pagination"></div>
-        <button></button>
-        </div>
+      </div>
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+      <button></button>
+    </div>
 
-
- 
-  <!-- cart item details -->
-  <div id="cartlist">
-    <div class="small-container cart-page " color="white " >
+    <!-- cart item details -->
+    <div id="cartlist">
+      <div class="small-container cart-page" color="white ">
         <table>
-            <tr>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Subtotal</th>
-            </tr>
-            <tbody id="tbody"></tbody>
-            <tr>
-                <td>
-                    <div class="cart-info">
-                        <img src="images/book1.jpg" alt="">
-                        <div>
-                            <p>Atomic Habits by James Clear</p>
-                            <small>Price: $50.00</small>
-                            <br>
-                            <a href="">Delete</a>
-                        </div>
-                    </div>
-                </td>
-                <td><input type="number" value="1"></td>
-                <td>$50.00 </td>
-            </tr>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+          </tr>
+          <tbody id="tbody"></tbody>
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="images/book1.jpg" alt="" />
+                <div>
+                  <p>Atomic Habits by James Clear</p>
+                  <small>Price: $50.00</small>
+                  <br />
+                  <a href="">Delete</a>
+                </div>
+              </div>
+            </td>
+            <td><input type="number" value="1" /></td>
+            <td>$50.00</td>
+          </tr>
 
-            <tr>
-                <td>
-                    <div class="cart-info">
-                        <img src="Books Images/Ancient And Medival India.jpg"">
-                        <div>
-                            <p>Ancient and Medival India</p>
-                            <small>Price: $50.00</small>
-                            <br>
-                            <a href="">Delete</a>
-                        </div>
-                    </div>
-                </td>
-                <td><input type="number" value="1"></td>
-                <td>$350.00 </td>
-            </tr>
-            
-            <tr>
-                <td>
-                    <div class="cart-info">
-                        <img src="Books Images/chetan bhagat.jpg" alt="">
-                        <div>
-                            <p>Chetan Bhagat</p>
-                            <small>Price: $50.00</small>
-                            <br>
-                            <a href="">Delete</a>
-                        </div>
-                    </div>
-                </td>
-                <td><input type="number" value="1"></td>
-                <td>$450.00 </td>
-            </tr>
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="Books Images/Ancient And Medival India.jpg"">
+                <div>
+                  <p>Ancient and Medival India</p>
+                  <small>Price: $50.00</small>
+                  <br />
+                  <a href="">Delete</a>
+                </div>
+              </div>
+            </td>
+            <td><input type="number" value="1" /></td>
+            <td>$350.00</td>
+          </tr>
 
-            <tr>
-                <td>
-                    <div class="cart-info">
-                        <img src="Books Images/Core Python Programming.webp" alt="">
-                        <div>
-                            <p>Core Python Programming</p>
-                            <small>Price: $50.00</small>
-                            <br>
-                            <a href="">Delete</a>
-                        </div>
-                    </div>
-                </td>
-                <td><input type="number" value="1"></td>
-                <td>$300.00 </td>
-            </tr>
-           </table> 
-        </div>
-    
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="Books Images/chetan bhagat.jpg" alt="" />
+                <div>
+                  <p>Chetan Bhagat</p>
+                  <small>Price: $50.00</small>
+                  <br />
+                  <a href="">Delete</a>
+                </div>
+              </div>
+            </td>
+            <td><input type="number" value="1" /></td>
+            <td>$450.00</td>
+          </tr>
 
-        <div class="total-price">
-            <table>
-                <tr>
-                    <td>Subtotal</td>
-                    <td>$200.00</td>
-                </tr>
-                <tr>
-                    <td>Tax</td>
-                    <td>$30.00</td>
-                </tr>
-                <tr>
-                    <td>Total</td>
-                    <td>$230.00</td>
-                </tr>
-            </table>
-        </div>
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="Books Images/Core Python Programming.webp" alt="" />
+                <div>
+                  <p>Core Python Programming</p>
+                  <small>Price: $50.00</small>
+                  <br />
+                  <a href="">Delete</a>
+                </div>
+              </div>
+            </td>
+            <td><input type="number" value="1" /></td>
+            <td>$300.00</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="total-price">
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td>$200.00</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td>$30.00</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>$230.00</td>
+          </tr>
+        </table>
+      </div>
     </div>
 
-<!-- footer section -->
+    <!--contact us-->
+    <div id="contactUS">
+      <div class="contactUs">
+        <h2>Contact US</h2>
+        <hr />
+        <div class="form">
+          <form action="">
+            <b> NAME&nbsp; : &nbsp;&nbsp;</b> <input type="text" id="roomNo" />
+            <br /><br />
 
-<footer id="contact">
-    <div class="photo">
+            <b> EMAIL &nbsp;:&nbsp;&nbsp;&nbsp;</b>
+            <input type="email" id="checkin" /> <br /><br />
+            <b> Message: </b> <input type="text" id="checkout" />
+            <div class="btns">
+              <button class="btn">Send</button>
+            </div>
+            <a href="./contact us/BookingDetails.html">User Reviews</a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- footer section -->
+
+    <footer id="contact">
+      <div class="photo">
         <a href="#cards"><h3>About US</h3></a>
-        <p>BookStore is India’s Largest and Cheapest Online Bookstore offering 40+ Million selections.</p>
-        <a href="https://www.facebook.com/chhaya.chaudhary.5496683" target=_blank><i class="fa-brands fa-square-facebook"></i></a>
-        <a href="https://www.instagram.com/chhaya_chaudhary_2000/"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/chhaya-chaudhary-54232120a/"><i class="fa-brands fa-linkedin"></i></a>
-        
-    </div>
-    <div class="contact">
+        <p>
+          BookStore is India’s Largest and Cheapest Online Bookstore offering
+          40+ Million selections.
+        </p>
+        <a
+          href="https://www.facebook.com/chhaya.chaudhary.5496683"
+          target="_blank"
+          ><i class="fa-brands fa-square-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/chhaya_chaudhary_2000/"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/chhaya-chaudhary-54232120a/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+      <div class="contact">
         <h3>Contact Info</h3>
-        <p><a href="mailto:akansha.kansal_cs20@gla.ac.in">akansha.kansal_cs20@gla.ac.in</a> </p>
-        <p><a href="mailto:chhaya.chaudhary_cs20@gla.ac.in">chhaya.chaudhary_cs20@gla.ac.in</a> </p>
+        <p>
+          <a href="mailto:akansha.kansal_cs20@gla.ac.in"
+            >akansha.kansal_cs20@gla.ac.in</a
+          >
+        </p>
+        <p>
+          <a href="mailto:chhaya.chaudhary_cs20@gla.ac.in"
+            >chhaya.chaudhary_cs20@gla.ac.in</a
+          >
+        </p>
         <p>+91 512548556 , +91 985623656</p>
         <p>Mathura,281001</p>
-    </div>
-    <div class="news">
+      </div>
+      <div class="news">
         <h3>Services</h3>
         <p>Home Delivery</p>
         <p>Cash On Delivery</p>
         <p>Online Payment</p>
-        
-    </div>
-</footer>
+      </div>
+    </footer>
 
-
-<script src="./js/swiper-bundle.min.js"></script>
+    <script type="module" src="./contact us/firebaseConfig.js"></script>
+    <script type="module" src="./contact us/script.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
     <script src="./carasoul.js"></script>
     <script src="./script.js"></script>
+    <script src="./them.js"></script>
     <!-- <script src="./js/cart.js"></script> -->
-<!-- <script src="./cart.js"></script> -->
-
-</body>
+    <!-- <script src="./cart.js"></script> -->
+  </body>
 </html>
