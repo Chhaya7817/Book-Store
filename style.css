@@ -219,7 +219,7 @@ height:20%;
     width:20%;
     background-color: rgb(185, 158, 158);
     height:80%;
-    border:3px solid rgb(111, 94, 94);
+    border:3px black;
     text-align: center;
     border-radius: 20px;
     box-shadow: 20px 20px 20px;
@@ -751,6 +751,76 @@ header .title{
   display: none;
 }
 
+
+/*about us*/
+.aboutus{
+  background-color:inherit;
+    height:80vh;
+    width:100%;
+  
+}
+hr{
+  font-size: 10px;
+}
+.updates{
+  display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.updates .person1{
+    width:40%;
+    background-color: rgb(185, 158, 158);
+    height:80%;
+    border:3px black;
+    
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px;
+    transition: 2s;
+    display: flex;
+    padding: 20px;
+}
+.updates a{
+  color: black;
+}
+.updates .person1 img{
+  width:100%;
+  height:80%;
+}
+.updates .person2{
+  width:40%;
+  background-color: rgb(185, 158, 158);
+  height:80%;
+  border:3px black;
+  
+  font-weight: bold;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 20px 20px 20px;
+  transition: 2s;
+  display: flex;
+  padding: 20px;
+}
+.updates .person2 img{
+  width:100%;
+  height:80%;
+}
+.updates .person1:hover{
+  scale:1.1;
+}
+.updates .person2:hover{
+  scale:1.1;
+}
+.updates h2:hover{
+  text-decoration: underline;
+}
+.updates .social a:hover{
+  color: blue;
+}
+
+/*about us*/
 @media screen and (max-width: 768px) {
   html{
     scroll-padding-top: 0;
