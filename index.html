@@ -41,7 +41,7 @@
           </div>
           <div class="nav-links">
             <li>
-              <a href="#cartlist"
+              <a href="./cart.html"
                 ><i id="cart1" class="fa-sharp fa-solid fa-cart-plus"></i>
               </a>
             </li>
@@ -178,32 +178,21 @@
       <div class="login-form-container">
         <div id="close-login-btn" class="fas fa-times"></div>
 
-        <form action="">
+        <form action="" id="log">
           <h3>sign in</h3>
           <span>username</span>
-          <input
-            type="email"
-            name=""
-            class="box"
-            placeholder="enter your email"
-            id=""
-          />
+          <input type="email"  class="box" placeholder="enter your email" id="email"  />
           <span>password</span>
-          <input
-            type="password"
-            name=""
-            class="box"
-            placeholder="enter your password"
-            id=""
-          />
+          <input type="password" class="box"  placeholder="enter your password" id="pass" />
           <div class="checkbox">
             <input type="checkbox" name="" id="remember-me" />
             <label for="remember-me"> remember me</label>
           </div>
           <input type="submit" value="sign in" class="btn" />
-          <p>forget password ? <a href="#">click here</a></p>
-          <p>don't have an account ? <a href="#">create one</a></p>
+          <p id="forgot">forget password</p>
+          <p>don't have an account ? <a href="./signup.html">create one</a></p>
         </form>
+        
       </div>
 
       <div class="slide-container swiper" id="bestsellers">
@@ -840,17 +829,17 @@
         <h2>Contact US</h2>
         <hr />
         <div class="form">
-          <form action="">
-            <b> NAME&nbsp; : &nbsp;&nbsp;</b> <input type="text" id="roomNo" />
+          <form id="ff">
+            <b> NAME&nbsp; : &nbsp;&nbsp;</b> <input type="text" id="roomNo"  required/>
             <br /><br />
 
             <b> EMAIL &nbsp;:&nbsp;&nbsp;&nbsp;</b>
-            <input type="email" id="checkin" /> <br /><br />
-            <b> Message: </b> <input type="text" id="checkout" />
+            <input type="email" id="checkin" required/> <br /><br />
+            <b> Message: </b> <input type="text" id="checkout" required/>
             <div class="btns">
-              <button class="btn">Send</button>
+              <button class="btn" type="submit">Send</button>
             </div>
-            <a href="./contact us/BookingDetails.html" id="review">User Reviews</a>
+            <a href="./contact us/ResponseDetails.html" id="review">User Reviews</a>
           </form>
         </div>
       </div>
@@ -905,6 +894,8 @@
     <script src="./carasoul.js"></script>
     <script src="./script.js"></script>
     <script src="./them.js"></script>
+    <script src="./login.js" type="module"></script>
+    <script src="./cart.js"></script>
     <!-- <script src="./js/cart.js"></script> -->
     <!-- <script src="./cart.js"></script> -->
   </body>

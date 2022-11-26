@@ -9,7 +9,7 @@ import {
   const db = getDatabase();
   function getAllBookings() {
     const dbref= ref(db);
-    get(child(dbref,"data/"))
+    get(child(dbref,"Message/"))
     .then((snapshot)=>{
         var rooms=[];
         snapshot.forEach(childSnapshot =>{
@@ -40,10 +40,10 @@ var tbody = document.getElementById("tbody");
       let td4 = document.createElement("td");
   
       td1.innerText = ++stdNo;
-      td2.innerText = room.ROOM_NO;
-      td3.innerHTML=room.CHECK_IN;
+      td2.innerText = room.Name;
+      td3.innerHTML=room.Email;
 
-      td4.innerText = room.CHECK_OUT;
+      td4.innerText = room.Message;
      
   
       tr.appendChild(td1);

@@ -42,8 +42,8 @@ function additem(e){
   localStorage.setItem('items',JSON.stringify(items));
 }
 form=document.getElementById('addForm');
-form.addEventListener('submit',additem);
-document.getElementById('items').addEventListener('click',remove);
+// form.addEventListener('submit',additem);
+// document.getElementById('items').addEventListener('click',remove);
 function remove(e){
   el=e.target;
   if(el.classList.contains('delete')){

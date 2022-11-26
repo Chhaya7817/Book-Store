@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CART</title>
+  <link rel="stylesheet" href="./contact us/responsedetails.css">
+</head>
+<body>
+  <div class="container p-2">
+    <h2 class="text-center">BOOKS</h2>
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th>Sno.</th>
+          <th>Name</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <a href="./index.html" id="mainPAge">Click here to go back</a>
+
+  </div>
+  
+  <script>
+    var books=JSON.parse(sessionStorage.getItem('books'));
+    var stdNo = 0;
+var tbody = document.getElementById("tbody");
+
+
+  function DisplayData(roomsData)
+  {
+    stdNo = 0;
+    tbody.innerHTML = "";
+    roomsData.forEach((room) => {
+      let tr = document.createElement("tr");
+      let td1 = document.createElement("td");
+      let td2 = document.createElement("td");
+      let td3 = document.createElement("td");
+      <!-- let td4 = document.createElement("td"); -->
+      td1.innerText = ++stdNo;
+      td2.innerText = room.Name;
+      td3.innerHTML=room.price;
+      <!-- td4.innerText = room.Message; -->
+      tr.appendChild(td1);
+      tr.appendChild(td2);
+      tr.appendChild(td3);
+      <!-- tr.appendChild(td4); -->
+      tbody.append(tr);
+    });
+  }
+window.onload=DisplayData(books);
+  </script>
+</body>
+</html>
