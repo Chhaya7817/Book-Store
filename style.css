@@ -771,7 +771,9 @@ header .title{
   display: none;
 }
 
-
+.slide-container .card-wrapper .price span:hover{
+  background-color: blue;
+}
 /*about us*/
 .aboutus{
   background-color:inherit;

@@ -27,7 +27,11 @@ document.getElementById("login").innerText=user.email;
     alert('Login Successful');
     // display1();
     // dp();
-    document.getElementById("login").style.innerText=user.email;
+    let loginForm = document.querySelector('.login-form-container');
+    loginForm.classList.remove('active');
+    // document.getElementById("login").style.innerText=user.email;
+    window.location.reload();
+
     console.log("successful");
   }
   else{
