@@ -1,8 +1,11 @@
 var books=[];
 var b=document.querySelectorAll('.price span');
+
 // console.log(b);
 Array.from(b).forEach((s)=>{
+    
     s.addEventListener("click",addbook);
+
 });
 
 if(sessionStorage.getItem('books')!=""){
@@ -15,6 +18,8 @@ if(sessionStorage.getItem('books')!=""){
 
 
 function addbook(e){
+
+    
     var p=e.target.parentElement;
     var bk=p.parentElement.children[1].innerText;
     console.log(bk);
@@ -24,7 +29,9 @@ function addbook(e){
         price:price
     }
     console.log(books);
+    alert("book added to the cart");
     books.push(book);
     sessionStorage.setItem('books',JSON.stringify(books));
+
 }
 

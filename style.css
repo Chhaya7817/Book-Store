@@ -270,7 +270,7 @@ height:20%;
 login form*/
 .login-form-container{
     display: flex;
-    align-items: right;
+    align-items: center;
     justify-content: center;
     background:rgba(255,255,255,.9);
     position:fixed;
@@ -278,6 +278,10 @@ login form*/
     z-index: 10000;
     height:100%;
     width:35%;
+    /* object-fit: cover; */
+    font-size: 1.1rem;
+    height:90%;
+
 }
 
 .login-form-container.active{
@@ -288,6 +292,8 @@ login form*/
     background:#fff;
     border:2px solid black;
     width:30rem;
+    margin-right: 50px;
+    height:fit-content;
     padding:2rem;
     box-shadow: box-shadow;
     border-radius: .5rem;
@@ -295,7 +301,7 @@ login form*/
 }
 
 .login-form-container form h3{
-    font-size: 1.50rem;
+    /* font-size: 1.50rem; */
     text-transform: uppercase;
     color:black;
     text-align: center;
@@ -311,12 +317,12 @@ login form*/
 
 .login-form-container form .box{
     width: 90%;
-    margin:.5rem 0;
-    font-size: 1.2rem;
+    /* margin:.5rem 0; */
+    font-size: 1rem;
     border:2px solid black;
     border-radius: .5rem;
     padding:1rem 1.2rem;
-    color:black;
+    color:rgb(109, 98, 98);
     text-transform: none;
     height: 30px;
 }
@@ -343,8 +349,8 @@ login form*/
 }
 
 .login-form-container form p{
-    padding-top: .8rem;
-    font-size: 1.5rem;
+    /* padding-top: .8rem; */
+    font-size: 1.2rem;
 }
 
 .login-form-container form p a{
@@ -353,15 +359,15 @@ login form*/
 
 .login-form-container #close-login-btn{
     position: absolute;
-    top:4rem; right:4.5rem;
+    top:8rem; right:4.5rem;
     font-size: 3rem;
     cursor: pointer;
 }
 
 .btn{
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     display:inline-block;
-    padding:.9rem 3rem;
+    /* padding:.6rem 3rem; */
     border-radius: .5rem;
     color:#fff;
     font-size: 1.7rem;
@@ -900,7 +906,7 @@ body{
   width:100%;
 }
 .login-form-container #close-login-btn{
-  top:4.5rem; right:6.5rem;
+  top:4.5rem;
 
 }
 header .title{

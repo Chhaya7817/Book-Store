@@ -47,18 +47,7 @@ var x = setInterval(function() {
     }
 
     //cart
-    const cart = document.getElementById("cartlist");
-    document.getElementById('cart1').onclick=function()
-    {
-    // console.log(logo);
-    cart.style.display = "block";
-    }
-    document.querySelector('.fa-cart-flatbed').onclick=function()
-    {
-    // console.log(logo);
-    cart.style.display = "block";
-    }
-    
+ 
     
     const targetDiv = document.getElementById("menu");
 const btn = document.getElementById("list");
