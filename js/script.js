@@ -56,23 +56,8 @@ btn.onclick = function () {
   
     targetDiv.style.display = "block";
 
-
-
-
   
-};
-
-// const cart = document.getElementById("cartlist");
-// const cartbtn = document.getElementById("cart1");
-
-// cartbtn.onclick = function () {
-  
-//     cart.style.display = "block";
-  
-// };
-
-
-    
+};  
 
 
 }

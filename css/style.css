@@ -45,10 +45,10 @@ body{
 
 }
 .header1 nav .logo{
-  margin-left: 20px;
-    font-size: 30px;
+  margin-left: 25px;
+    font-size:x-large;
     font-weight: bold;
-    transition: 1s;
+    transition: 0.5s;
 }
 .header1 nav .logo:hover{
   scale: 1.2;
@@ -783,7 +783,7 @@ header .title{
 /*about us*/
 .aboutus{
   background-color:inherit;
-    height:80vh;
+    /* height:80vh; */
     width:100%;
   
 }
@@ -791,33 +791,50 @@ header .title{
   display: flex;
     justify-content: space-evenly;
     align-items: center;
+    /* object-fit: cover; */
 }
 
-.updates .person1{
+.updates .person1 ,.person2{
     width:40%;
     background-color: rgb(185, 158, 158);
-    height:80%;
+    /* height:80%; */
     border:3px black;
+    /* object-fit: fill; */
     
     font-weight: bold;
-    text-align: center;
     border-radius: 20px;
     box-shadow: 20px 20px 20px;
-    transition: 2s;
+    transition: 1s;
     display: flex;
-    padding: 20px;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 10px;
+    font-size: 1rem;
+  
 }
+.updates .im{
+  width:40%;
+}
+.updates .content1{
+width:70%;
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+
 .updates a{
   color: black;
 }
-.updates .person1 img{
+.updates .person1 img , .person2 img{
   width:100%;
-  height:80%;
+  height:100%;
+  text-align: center;
 }
+/*
 .updates .person2{
   width:40%;
   background-color: rgb(185, 158, 158);
-  height:80%;
+  /* height:80%; 
   border:3px black;
   
   font-weight: bold;
@@ -831,13 +848,13 @@ header .title{
 .updates .person2 img{
   width:100%;
   height:80%;
-}
-.updates .person1:hover{
+} */
+.updates .person1:hover , .person2:hover{
   scale:1.1;
 }
-.updates .person2:hover{
+/* .updates .person2:hover{
   scale:1.1;
-}
+} */
 .updates .social a{
   font-size: 30px;
   padding-right: 10px;
@@ -876,15 +893,22 @@ body{
     display: none;
   }
   .updates{
-    height:30%;
+    height:40%;
     width:100%;
     display: flex;
     flex-direction: column;
   
 }
 
+.aboutus .person1 {
+  width:80%;
+  margin-bottom: 100px;
+}
+.aboutus .person2{
+  width:80%;
+}
 .updates .sales{
-    width:50%;
+    width:80%;
    margin-bottom: 30px;
 }
 
@@ -909,6 +933,7 @@ body{
   top:4.5rem;
 
 }
+
 header .title{
   margin-top: 50px;
 }
@@ -932,6 +957,7 @@ header .title{
   text-decoration: underline;
   padding-bottom: 10px;
 }
+
 }
 @media screen and (max-width: 450px) {
 .book.img{

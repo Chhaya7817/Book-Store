@@ -1,4 +1,4 @@
-import {  getDatabase,  get,  set,  update,  remove,  child,  ref} from "https://www.gstatic.com/firebasejs/9.9.3/firebase-database.js";
+import {  getDatabase,   set,  ref} from "https://www.gstatic.com/firebasejs/9.9.3/firebase-database.js";
 
 var roomV, nameV, checkinV, checkoutV;
 const db = getDatabase();
@@ -7,6 +7,19 @@ var n = document.getElementById("roomNo");
 var em = document.getElementById("checkin");
 var me = document.getElementById("checkout");
 
+function input(event) {
+  
+  event.preventDefault();
+  if (sessionStorage.getItem("user") != null) {
+    // user = JSON.parse(sessionStorage.getItem("user"));
+    insertData(event);
+  }
+  else{
+    this.reset();
+    alert("Please Login to to share your reviews");
+    return;
+  }
+}
 function insertData(event){
   event.preventDefault();
   readFormData();
@@ -28,6 +41,6 @@ console.log(n+" "+em+" "+me);
 
 }
 
-document.getElementById('ff').addEventListener("submit",insertData);
+document.getElementById('ff').addEventListener("submit",input);
 
 
