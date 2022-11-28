@@ -26,7 +26,13 @@ import {
 var stdNo = 0;
 var tbody = document.getElementById("tbody");
 
+var user;
+if(sessionStorage.getItem('user')!=null){
+  user=JSON.parse(sessionStorage.getItem('user'));
+//   dp();
+var em=user.email;
 
+}
   function DisplayData(roomsData)
   {
     stdNo = 0;
@@ -41,7 +47,7 @@ var tbody = document.getElementById("tbody");
   
       td1.innerText = ++stdNo;
       td2.innerText = room.Name;
-      td3.innerHTML=room.Email;
+      td3.innerHTML=em;
 
       td4.innerText = room.Message;
      

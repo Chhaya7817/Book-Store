@@ -4,7 +4,7 @@ var roomV, nameV, checkinV, checkoutV;
 const db = getDatabase();
 
 var n = document.getElementById("roomNo");
-var em = document.getElementById("checkin");
+// var em = document.getElementById("login");
 var me = document.getElementById("checkout");
 
 function input(event) {
@@ -25,19 +25,19 @@ function insertData(event){
   readFormData();
   set(ref(db,"Message/"+n),{
       Name:n,
-      Email:em,
+      // Email:em,
       Message:me
   }).then(()=>{
       alert("Message Sent Successfully");
       this.reset();
-  }).catch((error)=>alert("unsuccessful",error));
+  }).catch((error));
 }
 
 function readFormData(e) {
   n= n.value;
-  em = em.value;
+  // em = em.value;
   me = me.value;
-console.log(n+" "+em+" "+me);
+console.log(n+" "+" "+me);
 
 }
 
